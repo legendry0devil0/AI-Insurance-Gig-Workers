@@ -1,46 +1,46 @@
-# 🚀 AI-Powered Parametric Insurance for Gig Workers
+#  AI-Powered Parametric Insurance for Gig Workers
 
-## 📌 Overview
+##  Overview
 An AI-driven parametric insurance platform designed to protect gig workers (Zomato, Swiggy, Zepto, etc.) from **income loss caused by external disruptions** like extreme weather, pollution, and unexpected events.
 
 Unlike traditional insurance, this system:
-- ⚡ Detects disruptions automatically  
-- 💸 Triggers instant payouts  
-- 🧠 Uses AI for risk prediction, pricing, and fraud detection  
+-  Detects disruptions automatically  
+-  Triggers instant payouts  
+-  Uses AI for risk prediction, pricing, and fraud detection  
 
 ---
 
-## 🚨 Problem Statement
+##  Problem Statement
 Gig workers depend on daily earnings. External disruptions such as:
-- 🌧️ Heavy rain  
-- 🌊 Floods  
-- 😷 Pollution  
-- 🚫 Curfews / strikes  
+-  Heavy rain  
+-  Floods  
+-  Pollution  
+-  Curfews / strikes  
 
 can reduce their working hours and cause **20–30% income loss**.
 
 Currently, there is **no structured income protection system** for such situations.
 
-👉 This project strictly focuses on **LOSS OF INCOME ONLY** (no health, accident, or vehicle coverage).
+* This project strictly focuses on **LOSS OF INCOME ONLY** (no health, accident, or vehicle coverage).
 
 ---
 
-## 👤 Target Users
-- 🍔 Food delivery (Zomato, Swiggy)  
-- 🛒 Grocery (Zepto, Blinkit)  
-- 📦 E-commerce (Amazon, Flipkart)  
+##  Target Users
+-  Food delivery (Zomato, Swiggy)  
+-  Grocery (Zepto, Blinkit)  
+-  E-commerce (Amazon, Flipkart)  
 
-### 📉 Real Scenario
+###  Real Scenario
 - Works ~8 hours/day  
 - Earns ~₹800/day  
 - Heavy rain → fewer orders  
 - Earnings drop to ₹200  
 
-👉 Income loss = ₹600 (unprotected)
+* Income loss = ₹600 (unprotected)
 
 ---
 
-## 💡 Solution
+## Solution
 We propose a **parametric insurance system** that:
 - Monitors real-world disruptions in real time  
 - Automatically detects income loss conditions  
@@ -49,7 +49,7 @@ We propose a **parametric insurance system** that:
 
 ---
 
-## ⚙️ System Workflow
+## System Workflow
 
 ```
 Worker Registers → AI Risk Profiling → Weekly Plan Activated
@@ -62,14 +62,14 @@ Automatic Claim Trigger
         ↓
 AI Fraud Detection
         ↓
-Instant Payout 💸
+Instant Payout 
 ```
 
 ---
 
-## 🧠 AI/ML Integration
+## AI/ML Integration
 
-### 🔍 Risk Assessment Model
+### Risk Assessment Model
 - Inputs:
   - Weather history  
   - Location  
@@ -78,20 +78,20 @@ Instant Payout 💸
   - Risk score  
   - Weekly premium  
 
-### 🛡️ Fraud Detection
+### Fraud Detection
 - GPS validation  
 - Activity verification  
 - Duplicate claim detection  
 - Anomaly detection  
 
-### 📈 Predictive Modeling
+### Predictive Modeling
 - Forecasts disruptions  
 - Dynamically adjusts pricing  
 - Helps manage reserves  
 
 ---
 
-## 💰 Weekly Premium Model
+## Weekly Premium Model
 
 Premium is calculated dynamically using AI based on:
 - Location risk  
@@ -108,29 +108,29 @@ Premium is calculated dynamically using AI based on:
 
 ---
 
-## ⚡ Parametric Triggers (Automatic Claims)
+## Parametric Triggers (Automatic Claims)
 
 Claims are triggered when:
-- 🌧 Rainfall > threshold  
-- 🌫 AQI > limit  
-- 🌊 Flood alerts  
-- 🚫 Curfew / zone closure  
-- 📉 Significant drop in activity  
+-  Rainfall > threshold  
+-  AQI > limit  
+-  Flood alerts  
+-  Curfew / zone closure  
+-  Significant drop in activity  
 
-👉 No manual claim process required  
+ No manual claim process required  
 
 ---
 
-# 💰 Hybrid Financial Model (Core Strength)
+#  Hybrid Financial Model (Core Strength)
 
-## 🔄 Model Overview
+##  Model Overview
 We use a **Hybrid Risk Pooling System**:
-- 📍 Regional Pools (city/zone-based)  
-- 🌍 National Pool (backup + large-scale crises)  
+-  Regional Pools (city/zone-based)  
+-  National Pool (backup + large-scale crises)  
 
 ---
 
-## 📊 Regional Distribution Table
+## Regional Distribution Table
 
 | Region Type | Risk Level | Weekly Premium | Regional Pool % | National Pool % |
 |-------------|------------|---------------|-----------------|-----------------|
@@ -141,7 +141,7 @@ We use a **Hybrid Risk Pooling System**:
 
 ---
 
-## 📊 Regional Risk Segmentation
+## Regional Risk Segmentation
 
 | Region          | Risk Type        |
 |----------------|------------------|
@@ -153,7 +153,7 @@ We use a **Hybrid Risk Pooling System**:
 
 ---
 
-## 📊 Fund Allocation Logic
+## Fund Allocation Logic
 
 ```
 Total Premium Collection
@@ -163,17 +163,17 @@ Total Premium Collection
 
 ---
 
-## 📊 Regional Crisis Handling
+## Regional Crisis Handling
 
 | Condition | Regional Usage | National Usage | Outcome |
 |----------|----------------|----------------|---------|
-| Small local disruption | ✅ Full | ❌ None | Fast payout |
-| Medium disruption | ✅ Partial | ✅ Backup | Balanced payout |
-| Regional pool exhausted | ❌ None | ✅ Full | Stability ensured |
+| Small local disruption |  Full |  None | Fast payout |
+| Medium disruption |  Partial |  Backup | Balanced payout |
+| Regional pool exhausted |  None |  Full | Stability ensured |
 
 ---
 
-## 📊 National Crisis Handling
+## National Crisis Handling
 
 | Scenario | Action |
 |----------|--------|
@@ -183,7 +183,7 @@ Total Premium Collection
 
 ---
 
-## 📊 Profit & Reserve Strategy
+## Profit & Reserve Strategy
 
 | Condition | Action |
 |----------|--------|
@@ -194,16 +194,16 @@ Total Premium Collection
 
 ---
 
-## 📈 Financial Viability
+## Financial Viability
 - Premium collected weekly  
 - Partial payout model (not full income replacement)  
 - Controlled claim probability  
 
-👉 Ensures long-term sustainability  
+* Ensures long-term sustainability  
 
 ---
 
-## 🔐 Fraud Prevention
+## Fraud Prevention
 - Location verification  
 - Worker activity validation  
 - Cross-check with external data  
@@ -211,7 +211,7 @@ Total Premium Collection
 
 ---
 
-## 🔗 Integrations
+## Integrations
 - Weather APIs (OpenWeatherMap)  
 - GPS / Maps APIs  
 - Mock delivery platform APIs  
@@ -219,14 +219,14 @@ Total Premium Collection
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
-### 👤 Worker Dashboard
+### Worker Dashboard
 - Coverage status  
 - Earnings protected  
 - Claim history  
 
-### 🧑‍💼 Admin Dashboard
+### Admin Dashboard
 - Risk analytics  
 - Pool monitoring  
 - Fraud alerts  
@@ -234,7 +234,7 @@ Total Premium Collection
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 **Frontend:** React / Flutter  
 **Backend:** Node.js / Python  
@@ -244,14 +244,14 @@ Total Premium Collection
 
 ---
 
-## 📱 Platform Choice
-👉 Mobile-first approach  
+## Platform Choice
+* Mobile-first approach  
 - Gig workers primarily use smartphones  
 - Enables real-time tracking and notifications  
 
 ---
 
-## 🧩 System Architecture (High-Level)
+## System Architecture (High-Level)
 
 ```
                            ┌────────────────────────────┐
@@ -332,7 +332,7 @@ Total Premium Collection
               └────────────────────────────────────────────┘
 ```
 
-## 🔹 System Flow Explanation
+## System Flow Explanation
 
 - The gig worker registers and selects a weekly insurance plan.  
 - The AI Risk Engine calculates the premium based on location and risk factors.  
@@ -348,7 +348,7 @@ Total Premium Collection
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 ✔ AI-based pricing  
 ✔ Weekly subscription model  
@@ -359,13 +359,13 @@ Total Premium Collection
 
 ---
 
-## 🚀 Future Scope
+## Future Scope
 - Real platform integration  
 - Advanced ML models  
 - Nationwide scaling  
 
 ---
 
-## 💥 Conclusion
+## Conclusion
 
 This system introduces a **financially sustainable, AI-driven insurance model** that protects gig workers from income loss while balancing **regional efficiency and national stability**.
