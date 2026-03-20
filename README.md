@@ -254,9 +254,97 @@ Total Premium Collection
 ## 🧩 System Architecture (High-Level)
 
 ```
-User App → Backend → AI Engine → Event Monitoring → Trigger Engine
-        → Fraud Detection → Financial Engine → Claim Engine → Payout System
+                           ┌────────────────────────────┐
+                           │     Gig Worker (User)      │
+                           │   Mobile App / Web App     │
+                           └─────────────┬──────────────┘
+                                         │
+                                         ▼
+                           ┌────────────────────────────┐
+                           │        API Gateway         │
+                           │  (Authentication + Routing)│
+                           └─────────────┬──────────────┘
+                                         │
+        ┌────────────────────────────────┼────────────────────────────────┐
+        ▼                                ▼                                ▼
+┌────────────────────┐        ┌────────────────────┐        ┌────────────────────┐
+│   User Service     │        │   Policy Service   │        │   Payment Service  │
+│ - Registration     │        │ - Weekly Plans     │        │ - Payout Handling  │
+│ - Profile Data     │        │ - Premium Storage  │        │ - Razorpay / UPI   │
+└─────────┬──────────┘        └─────────┬──────────┘        └─────────┬──────────┘
+          │                             │                             │
+          └──────────────┬──────────────┴──────────────┬──────────────┘
+                         ▼                             ▼
+              ┌────────────────────┐        ┌────────────────────────┐
+              │   AI Risk Engine   │        │ Fraud Detection Engine │
+              │ - Risk Scoring     │        │ - GPS Validation       │
+              │ - Dynamic Pricing  │        │ - Activity Check       │
+              │ - Zone Analysis    │        │ - Duplicate Detection  │
+              └─────────┬──────────┘        └─────────┬──────────────┘
+                        │                             │
+                        ▼                             ▼
+              ┌────────────────────────────────────────────┐
+              │        Parametric Trigger Engine           │
+              │ - Threshold Check (Rain / Pollution etc.)  │
+              │ - Event Matching                           │
+              │ - Auto Claim Trigger                       │
+              └─────────────────────┬──────────────────────┘
+                                    │
+                                    ▼
+              ┌────────────────────────────────────────────┐
+              │        Event Monitoring System             │
+              │ - Weather API                              │
+              │ - Pollution API                            │
+              │ - External Disruption Data                 │
+              └─────────────────────┬──────────────────────┘
+                                    │
+                                    ▼
+              ┌────────────────────────────────────────────┐
+              │         Financial Engine (CORE)            │
+              │                                            │
+              │ - Regional Pool Management                 │
+              │ - National Pool Management                 │
+              │ - Fund Allocation Logic                    │
+              │ - Profit Cap + Reserve Buffer              │
+              └─────────────────────┬──────────────────────┘
+                                    │
+                                    ▼
+              ┌────────────────────────────────────────────┐
+              │               Claim Engine                 │
+              │ - Claim Validation                         │
+              │ - Approval Logic                           │
+              │ - Loss Calculation                         │
+              └─────────────────────┬──────────────────────┘
+                                    │
+                                    ▼
+              ┌────────────────────────────────────────────┐
+              │               Payout System                │
+              │ - Instant Transfer                         │
+              │ - UPI / Razorpay Integration               │
+              └─────────────────────┬──────────────────────┘
+                                    │
+                                    ▼
+              ┌────────────────────────────────────────────┐
+              │                Dashboards                  │
+              │  Worker View        |    Admin View        │
+              │ - Coverage Status   | - Risk Analytics     │
+              │ - Claims History    | - Pool Monitoring    │
+              └────────────────────────────────────────────┘
 ```
+
+## 🔹 System Flow Explanation
+
+- The gig worker registers and selects a weekly insurance plan.  
+- The AI Risk Engine calculates the premium based on location and risk factors.  
+- The Event Monitoring System continuously collects real-time data (weather, pollution, disruptions).  
+- When thresholds are crossed, the Parametric Trigger Engine automatically detects a valid disruption.  
+- The Fraud Detection Engine verifies user authenticity (location, activity, duplicates).  
+- The Financial Engine decides the payout source:
+  - Regional Pool (for local events)
+  - National Pool (for large-scale events)  
+- The Claim Engine validates and processes the claim automatically.  
+- The Payout System transfers money instantly via UPI / Razorpay.  
+- Dashboards provide insights for both workers and admins.  
 
 ---
 
